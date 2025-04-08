@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to travel form</title>
+    <link rel="stylesheet" href="style.css?v=<?= time(); ?>">
+
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to US TRIP form</h2>
+        <p>Enter your details and submit to confirm your 
+            participation in the trip
+        </p>
+        <form action="index.php" method="post">
+            <input type="text" name="name" id="name" placeholder="enter your name">
+            <input type="text" name='age' id="age" placeholder="enter your age">
+            <input type="text" name="gender" id="gender" placeholder="enter your gender">
+            <input type="email" name="email" id="email" placeholder="enter your email">
+            <input type="phone" name="phone" id="phone" placeholder="enter your phone number">
+            <textarea name="desc" id="desc" cols="30" rows="10" placeholder="enter any other info here"></textarea>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
